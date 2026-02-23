@@ -5,6 +5,8 @@
 This project provides a **fully customizable Gauge control for WPF**, implemented in **C# and XAML**.  
 It is designed for use in dashboards, monitoring systems, industrial applications, and any scenario where analog-style visualization is required.
 
+<img width="338" height="368" alt="image" src="https://github.com/user-attachments/assets/7dcb9dbc-5fde-49f7-ab03-8df5189ef4a7" />
+
 The control supports:
 - Flexible scale angles
 - Major and minor ticks
