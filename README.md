@@ -36,7 +36,7 @@ All properties are implemented as **Dependency Properties**, making the control 
 ### Option 2: Git Submodule
 
 ```bash
-git submodule add [https://github.com/your-username/WpfGaugeControl.git](https://github.com/hosein-srj/GaugeControl)
+git submodule add https://github.com/hosein-srj/GaugeControl
 ```
 
 ## Usage
