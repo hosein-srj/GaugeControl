@@ -38,7 +38,7 @@ git submodule add [https://github.com/your-username/WpfGaugeControl.git](https:/
 ```
 
 ## Usage
-```C#
+```xaml
 <Window
     xmlns:local="clr-namespace:GaugeExample"
     ...>
