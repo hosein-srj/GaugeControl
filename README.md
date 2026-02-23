@@ -1,3 +1,78 @@
+# WPF Gauge Control
+
+## Overview
+
+This project provides a **fully customizable Gauge control for WPF**, implemented in **C# and XAML**.  
+It is designed for use in dashboards, monitoring systems, industrial applications, and any scenario where analog-style visualization is required.
+
+The control supports:
+- Flexible scale angles
+- Major and minor ticks
+- Custom fonts and colors
+- Multiple value display locations
+- Inverted and non-inverted ranges
+- Precise visual tuning using relative extents
+
+All properties are implemented as **Dependency Properties**, making the control **binding-friendly** and suitable for MVVM architectures.
+
+---
+
+## Installation
+
+### Option 1: Copy Source Files (Recommended)
+
+1. Copy the following files into your WPF project:
+   - `Gauge.xaml`
+   - `Gauge.xaml.cs`
+
+2. Ensure the namespace matches your project or update the XAML usage accordingly.
+
+3. Build the project.
+
+---
+
+### Option 2: Git Submodule
+
+```bash
+git submodule add [https://github.com/your-username/WpfGaugeControl.git](https://github.com/hosein-srj/GaugeControl)
+```
+
+## Usage
+```C#
+<Window
+    xmlns:local="clr-namespace:GaugeExample"
+    ...>
+
+    <local:Gauge
+        Width="220"
+        Height="200"
+        Minimum="0"
+        Maximum="6000"
+        Value="3500"
+        ScaleStartAngle="180"
+        ScaleEndAngle="0"
+        InvertedRange="True"
+
+        TickInterval="1000"
+        MinorTickInterval="250"
+
+        LabelFontSize="13"
+        LabelFontWeight="Bold"
+        LabelFontBrush="#1D521A"
+
+        NeedleBrush="#1D521A"
+        RangeBrush="#1D521A"
+
+        ValueExtent="0.25"
+        ValueLocation="BottomCenter"
+        ValueFontSize="18"
+        ValueFontWeight="SemiBold"
+        ValueFontBrush="#1D521A"
+        ValueFormatString="{}{0:F0}"
+    />
+</Window>
+```
+
 | Property           | Type     | Description                                                         |
 | ------------------ | -------- | ------------------------------------------------------------------- |
 | `Minimum`          | `double` | Minimum value of the gauge                                          |
