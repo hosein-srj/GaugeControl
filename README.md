@@ -73,6 +73,11 @@ git submodule add [https://github.com/your-username/WpfGaugeControl.git](https:/
 </Window>
 ```
 
+## Gauge Control – Properties Reference
+
+The Gauge control exposes a rich set of Dependency Properties for full visual and behavioral customization.
+
+### Value & Range Properties
 | Property           | Type     | Description                                                         |
 | ------------------ | -------- | ------------------------------------------------------------------- |
 | `Minimum`          | `double` | Minimum value of the gauge                                          |
@@ -81,7 +86,7 @@ git submodule add [https://github.com/your-username/WpfGaugeControl.git](https:/
 | `InvertedRange`    | `bool`   | If `true`, the scale direction is reversed                          |
 | `RangeScaleFactor` | `double` | Multiplier applied to range values (e.g. 1000 for RPM in thousands) |
 
-
+### Scale & Angle Properties
 | Property                | Type     | Description                          |
 | ----------------------- | -------- | ------------------------------------ |
 | `ScaleStartAngle`       | `double` | Start angle of the scale (degrees)   |
@@ -91,7 +96,8 @@ git submodule add [https://github.com/your-username/WpfGaugeControl.git](https:/
 | `RangeInnerEndExtent`   | `double` | Inner radius of range at scale end   |
 | `RangeOuterEndExtent`   | `double` | Outer radius of range at scale end   |
 
-
+### Tick Properties
+Major Ticks
 | Property          | Type     | Description                  |
 | ----------------- | -------- | ---------------------------- |
 | `TickInterval`    | `double` | Interval between major ticks |
@@ -100,7 +106,7 @@ git submodule add [https://github.com/your-username/WpfGaugeControl.git](https:/
 | `TickBrush`       | `Brush`  | Color of major ticks         |
 | `TickStrokeWidth` | `double` | Thickness of major ticks     |
 
-
+Minor Ticks
 | Property               | Type     | Description                  |
 | ---------------------- | -------- | ---------------------------- |
 | `MinorTickInterval`    | `double` | Interval between minor ticks |
@@ -109,7 +115,7 @@ git submodule add [https://github.com/your-username/WpfGaugeControl.git](https:/
 | `MinorTickBrush`       | `Brush`  | Color of minor ticks         |
 | `MinorTickStrokeWidth` | `double` | Thickness of minor ticks     |
 
-
+### Label Properties (Scale Numbers)
 | Property            | Type         | Description                               |
 | ------------------- | ------------ | ----------------------------------------- |
 | `LabelFontFamily`   | `FontFamily` | Font family of scale labels               |
@@ -119,6 +125,7 @@ git submodule add [https://github.com/your-username/WpfGaugeControl.git](https:/
 | `LabelFormatString` | `string`     | Format string for labels perceived values |
 | `LabelExtent`       | `double`     | Radial position of labels                 |
 
+### Needle Properties
 | Property                  | Type     | Description                      |
 | ------------------------- | -------- | -------------------------------- |
 | `NeedleBrush`             | `Brush`  | Color of the needle              |
@@ -129,6 +136,7 @@ git submodule add [https://github.com/your-username/WpfGaugeControl.git](https:/
 | `NeedlePivotOutlineBrush` | `Brush`  | Pivot outline color              |
 | `NeedlePivotEndExtent`    | `double` | Pivot circle size                |
 
+### Value Display Properties (Center / Bottom Value)
 | Property            | Type                | Description                                     |
 | ------------------- | ------------------- | ----------------------------------------------- |
 | `ValueExtent`       | `double`            | Radial position of the value text               |
@@ -140,7 +148,8 @@ git submodule add [https://github.com/your-username/WpfGaugeControl.git](https:/
 | `ValueFontBrush`    | `Brush`             | Color of value text                             |
 | `ValueLocation`     | `ValueLocationEnum` | Position of value text                          |
 
-
+### ValueLocation Enum
+Controls where the value text is rendered.
 | Value          | Description            |
 | -------------- | ---------------------- |
 | `Center`       | Center of the gauge    |
@@ -149,8 +158,25 @@ git submodule add [https://github.com/your-username/WpfGaugeControl.git](https:/
 | `BottomCenter` | Bottom center of gauge |
 | `TopCenter`    | Top center of gauge    |
 
-
+### Range Properties
 | Property           | Type     | Description                        |
 | ------------------ | -------- | ---------------------------------- |
 | `RangeBrush`       | `Brush`  | Color of the scale range           |
 | `RangeScaleFactor` | `double` | Visual scale multiplier for ranges |
+
+
+## License
+
+This project is licensed under the **MIT License**. Feel free to use and modify.
+
+---
+
+## Contributing
+
+If you’d like to contribute:
+1. Fork the repo 🍴
+2. Create a new branch: `git checkout -b feature-name`
+3. Commit your changes: `git commit -m "Add feature X"`
+4. Push to your branch: `git push origin feature-name`
+5. Open a **Pull Request** 🚀
+
